@@ -5,7 +5,7 @@
 ##Installation
 
 Enter application root directory `cd <path/to/app>`  
-install dependencies `npm install`  
+install dependencies `npm install` and `bower install` 
 
 ##Run App
 run server `npm start`  
