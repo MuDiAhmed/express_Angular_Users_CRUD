@@ -1,0 +1,24 @@
+{
+  "name": "angular-express",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./app.js",
+    "test": "./node_modules/karma/bin/karma start"
+  },
+  "dependencies": {
+    "body-parser": "~1.13.2",
+    "express": "~4.13.1",
+    "jade": "~1.11.0",
+    "mongoose": "^4.5.1",
+    "morgan": "~1.6.1",
+    "q": "^1.4.1"
+  },
+  "devDependencies": {
+    "jasmine-core": "^2.4.1",
+    "karma": "^1.0.0",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-firefox-launcher": "^1.0.0",
+    "karma-jasmine": "^1.0.2"
+  }
+}

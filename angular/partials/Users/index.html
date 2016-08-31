@@ -1,0 +1,9 @@
+<form  class="form-inline searchForm" ng-submit="searchUsers(user)">
+    <input class="form-control" type="text" placeholder="userName..." ng-model="user.username">
+    <input class="form-control" type="text" placeholder="Email..." ng-model="user.email">
+    <input class="form-control btn btn-success" type="submit" value="Search">
+</form>
+<a ui-sref="dashboard.create-user" class="btn btn-success pull-right"><i class="fa fa-plus-square"></i> Create User</a>
+</div>
+<div  ui-grid-pagination ui-grid="usersGridOptions"></div>
+<div class="row"><div class="col-12">&nbsp;</div></div>

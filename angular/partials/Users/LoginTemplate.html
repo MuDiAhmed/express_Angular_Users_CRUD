@@ -1,0 +1,28 @@
+<div class="modal-content">
+    <form ng-submit="login(user)" name="loginForm" id="login-form" method="post" role="form" >
+        <div id="login-header" class="modal-header">
+            <button type="button" class="close" ng-click="closeModal()">&times;</button>
+            <h3 class="modal-title pull-left left_text">Sign in</h3>
+        </div>
+        <div class="modal-body">
+            <div class="has-error">
+                <p class="help-block help-block-error">{{ error['general'] }}</p>
+            </div>
+            <div ng-class="{ 'has-success': !error['username'] && submitted,'has-error': error['username'] && submitted || error['general']}" class="form-group field-loginform-username required">
+                <label class="control-label pull-left left_text" for="loginform-username">Username</label>
+                <input ng-model="user.username" type="text" id="loginform-username" class="form-control">
+                <p class="help-block help-block-error text_left">{{ error['username'] }}</p>
+            </div>
+            <div ng-class="{ 'has-success': !error['password'] && submitted,'has-error': error['password'] && submitted || error['general']}" class="form-group field-loginform-password required">
+                <label class="control-label pull-left left_text" for="loginform-password">Password</label>
+                <input ng-model="user.password" type="password" id="loginform-password" class="form-control">
+                <p class="help-block help-block-error text_left">{{ error['password'] }}</p>
+            </div>
+        </div>
+
+        <div id="login-footer" class="modal-footer">
+            <button type="submit" class="btn btn-primary" name="login-button">Login</button>
+            <button type="button" class="btn btn-default" ng-click="closeModal()">Close</button>
+        </div>
+    </form>
+</div>

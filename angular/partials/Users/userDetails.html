@@ -1,0 +1,33 @@
+<h2 class="text_left">{{userObject.username}} Details</h2>
+<div class="container" ng-if="!errorCode">
+    <div class="row">
+        <div class="col-md-2">
+            <h4>Full Name </h4>
+        </div>
+        <div class="col-md-4">
+            <h4>{{userObject.firstName +" "+userObject.lastName}}</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <h4>Username </h4>
+        </div>
+        <div class="col-md-4">
+            <h4>{{userObject.username}}</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <h4>Email </h4>
+        </div>
+        <div class="col-md-4">
+            <h4>{{userObject.email}}</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <a ui-sref="dashboard.users">Back To All Users</a>
+        </div>
+
+    </div>
+</div>
